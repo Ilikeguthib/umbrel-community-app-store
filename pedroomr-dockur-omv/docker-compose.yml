@@ -4,31 +4,28 @@ services:
 
   app_proxy:
     environment:
-      APP_HOST: pedroomr-dockur-windows-7_app_1
-      APP_PORT: 8006
+      APP_HOST: pedroomr-dockur-omv_app_1
+      APP_PORT: 90
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: dockurr/windows
+    image: qemux/qemu-arm
     restart: on-failure
     environment:
-      VERSION: "7u"
-      RAM_SIZE: "4G"
+      RAM_SIZE: "2G"
       CPU_CORES: "2"
-      DISK_SIZE: "64G"
+      DISK_SIZE: "32G"
       GPU: "Y"
       PUID: 1000
       PGID: 1000
     devices:
       - /dev/kvm
       - /dev/net/tun
-      - /dev/dri
     cap_add:
       - NET_ADMIN
     volumes:
       - ${APP_DATA_DIR}/data:/storage:rw
-      - ${UMBREL_ROOT}/data/storage/downloads:/data:rw
     ports:
-      - "3390:3389"
+      - "9006:8006"
     stop_grace_period: 2m
     init: true
