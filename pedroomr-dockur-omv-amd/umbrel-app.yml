@@ -1,0 +1,54 @@
+manifestVersion: 1
+id: pedroomr-dockur-omv-amd
+name: Openmediavault
+tagline: Run Openmediavault in a qemu container
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/openmediavault.png
+category: Operating Systems
+version: "1.0.0"
+port: 90
+
+description: >-
+  Run Openmediavault on your umbrel to add what the devs havent added.
+  Redundancy Raid everything else besides smb and so on.
+
+
+  ⚠️ Minimum Requirements
+
+  CPU: 86_64 Bit processor (Intel or AMD)
+
+  RAM: At least 2 GB
+
+  Disk: Starts small but dynamically expands up to 32 GB
+
+
+  The main interface is available on port 90 (through the browser),
+  and also supports SMB connections on port 444.
+
+
+  ⚠️ Your device must support virtualization and enabled in the BIOS/UEFI!
+
+  
+  The product names, logos, brands, and other trademarks referred to within this project
+  are the property of their respective trademark holders. This project is not affiliated,
+  sponsored, or endorsed by Microsoft Corporation.
+developer: Dockur
+website: https://github.com/dockur/windows
+submitter: PedrooMR
+submission: https://github.com/PedrooMR/umbrel-community-app-store
+repo: https://github.com/PedrooMR/umbrel-community-app-store
+support: https://github.com/PedrooMR/umbrel-community-app-store/issues
+
+gallery:
+  - https://i.imgur.com/cZWJM4s.png
+  - https://i.imgur.com/UE4CGBu.png
+  - https://i.imgur.com/zxSPszi.png
+
+releaseNotes: >-
+  Currently this is just a debian vm you need to run:
+  apt update && apt upgrade -y && apt install wget
+  wget -O - https://get.openmediavault.io | sh -
+
+dependencies: []
+
+defaultUsername: admin  
+defaultPassword: openmediavault
