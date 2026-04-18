@@ -1,1 +1,32 @@
+version: "3.7"
 
+services:
+
+  app_proxy:
+    environment:
+      APP_HOST: pedroomr-dockur-omv-amd_app_1
+      APP_PORT: 90
+      PROXY_AUTH_ADD: "false"
+
+  app:
+    image: qemux/qemu
+    restart: on-failure
+    environment:
+      BOOT: "debian"
+      RAM_SIZE: "2G"
+      CPU_CORES: "2"
+      DISK_SIZE: "32G"
+      PUID: 1000
+      PGID: 1000
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ${APP_DATA_DIR}/data:/storage:rw
+    ports:
+      - "9006:8006"
+      - "444:445"
+    stop_grace_period: 2m
+    init: true
