@@ -12,10 +12,10 @@ services:
     image: qemux/qemu-arm
     restart: on-failure
     environment:
+      BOOT: "debian"
       RAM_SIZE: "2G"
       CPU_CORES: "2"
       DISK_SIZE: "32G"
-      GPU: "Y"
       PUID: 1000
       PGID: 1000
     devices:
@@ -27,5 +27,6 @@ services:
       - ${APP_DATA_DIR}/data:/storage:rw
     ports:
       - "9006:8006"
+      - "444:445"
     stop_grace_period: 2m
     init: true
