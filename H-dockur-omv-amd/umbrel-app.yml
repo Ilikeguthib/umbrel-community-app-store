@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: pedroomr-dockur-omv-amd
+id: H-dockur-omv-amd
 name: Openmediavault
 tagline: Run Openmediavault in a qemu container
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/openmediavault.png
@@ -33,10 +33,10 @@ description: >-
   sponsored, or endorsed by Microsoft Corporation.
 developer: Dockur
 website: https://github.com/dockur/windows
-submitter: PedrooMR
-submission: https://github.com/PedrooMR/umbrel-community-app-store
-repo: https://github.com/PedrooMR/umbrel-community-app-store
-support: https://github.com/PedrooMR/umbrel-community-app-store/issues
+submitter: H
+submission: https://github.com/H/umbrel-community-app-store
+repo: https://github.com/H/umbrel-community-app-store
+support: https://github.com/H/umbrel-community-app-store/issues
 
 gallery:
   - https://i.imgur.com/cZWJM4s.png

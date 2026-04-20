@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: pedroomr-dockur-windows-10
+id: H-dockur-windows-10
 name: Windows 10
 tagline: Run Windows 10 inside a Docker container
 icon: https://i.imgur.com/mZ8m1D6.png
@@ -40,10 +40,10 @@ description: >-
   sponsored, or endorsed by Microsoft Corporation.
 developer: Dockur
 website: https://github.com/dockur/windows
-submitter: PedrooMR
-submission: https://github.com/PedrooMR/umbrel-community-app-store
-repo: https://github.com/PedrooMR/umbrel-community-app-store
-support: https://github.com/PedrooMR/umbrel-community-app-store/issues
+submitter: H
+submission: https://github.com/H/umbrel-community-app-store
+repo: https://github.com/H/umbrel-community-app-store
+support: https://github.com/H/umbrel-community-app-store/issues
 
 gallery:
   - https://i.imgur.com/DauzSjU.png

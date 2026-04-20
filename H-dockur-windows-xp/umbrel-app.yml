@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: pedroomr-dockur-windows-xp
+id: H-dockur-windows-xp
 name: Windows XP
 tagline: Run Windows XP inside a Docker container
 icon: https://i.imgur.com/jBXRKpu.png
@@ -41,10 +41,10 @@ description: >-
   sponsored, or endorsed by Microsoft Corporation.
 developer: Dockur
 website: https://github.com/dockur/windows
-submitter: PedrooMR
-submission: https://github.com/PedrooMR/umbrel-community-app-store
-repo: https://github.com/PedrooMR/umbrel-community-app-store
-support: https://github.com/PedrooMR/umbrel-community-app-store/issues
+submitter: H
+submission: https://github.com/H/umbrel-community-app-store
+repo: https://github.com/H/umbrel-community-app-store
+support: https://github.com/H/umbrel-community-app-store/issues
 
 gallery:
   - https://i.imgur.com/RxYnNCu.png
