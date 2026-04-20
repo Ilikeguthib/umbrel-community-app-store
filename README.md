@@ -1,8 +1,32 @@
-# ☂️ PedrooMR's Umbrel App Store
 
-This repository contains my custom Umbrel App Store. This store is not maintained by the Umbrel team.
 
-##
+
+
+
+
+# ☂️ YAUS - Yet Another Umbrel Store ![Written by humans, not AI](https://img.shields.io/badge/written_by_humans-not_ai-blue?style=for-the-badge)
+
+
+> [!CAUTION]
+>
+> This is in very very very early early Developement
+>
+>What i mean by that is that nothing fukin works :)
+>
+>Actually windows and openmdiavault work
+>
+>All of these apps are Docker Containers not VMS
+
+This App Store is intented to bring Windows/Macos/etc. to Umbrel.
+
+## Installation
+To use this jsut add this source to the Umbrel Community App Store page:
+```sh
+https://github.com/Ilikeguthib/YAUS
+```
+
+### ⚠️ How to add the App Store:
+https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
 
 ### Currently available apps
 
@@ -16,12 +40,15 @@ This repository contains my custom Umbrel App Store. This store is not maintaine
 
 ##
 
-### ⚠️ How to add the App Store:
+## Sources
+This Repo is made from
+[Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
 
-https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
+The Docker Compose files are taken from the respective projects’ GitHub repositories.
 
-&nbsp; 
+## Disclaimer
+I did not build these Docker images.
+I am not affiliated with any of these projects and I do not own any associated trademarks.
 
-For further help and support: https://community.umbrel.com/
-
-##
+## License
+This project is licensed under the GNU GPLv3.
