@@ -24,7 +24,10 @@
             <div class="info-box">
                 <h3>Quick Start</h3>
                 <p>Add this source to your Umbrel Community App Store:</p>
-                <code>https://github.com/Ilikeguthib/YAUS</code>
+                <div class="code-container">
+                    <code id="storeCode">https://github.com/Ilikeguthib/YAUS</code>
+                    <button class="copy-btn" onclick="copyToClipboard()">📋 Copy</button>
+                </div>
             </div>
         </section>
 
@@ -49,6 +52,20 @@
     </div>
 
     <script>
+        function copyToClipboard() {
+            const code = document.getElementById('storeCode').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Copied!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+            });
+        }
+
         const apps = [
             {
                 name: "Dockur - Windows XP",
