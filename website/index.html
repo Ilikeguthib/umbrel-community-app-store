@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAUS - Yet Another Umbrel Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>☂️ YAUS</h1>
+                <p class="subtitle">Yet Another Umbrel Store</p>
+                <p class="tagline">Run Windows, MacOS, and more on your Umbrel via Docker containers</p>
+            </div>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Welcome to YAUS</h2>
+            <p>This App Store brings the power of running full operating systems and services directly on your Umbrel. All apps run as Docker containers, giving you flexibility and efficiency.</p>
+            <div class="info-box">
+                <h3>Quick Start</h3>
+                <p>Add this source to your Umbrel Community App Store:</p>
+                <code>https://github.com/Ilikeguthib/YAUS</code>
+            </div>
+        </section>
+
+        <!-- Sorting Options -->
+        <section class="sorting">
+            <h2>Available Apps</h2>
+            <div class="sort-controls">
+                <button class="sort-btn active" data-sort="name">Sort by Name</button>
+                <button class="sort-btn" data-sort="port">Sort by Port</button>
+            </div>
+        </section>
+
+        <!-- Apps Grid -->
+        <section class="apps-grid" id="appsGrid">
+            <!-- Apps will be inserted here by JavaScript -->
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>YAUS © 2024 | All apps are Docker containers | <a href="https://github.com/Ilikeguthib/umbrel-community-app-store" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const apps = [
+            {
+                name: "Dockur - Windows XP",
+                description: "Run Windows XP inside a Docker container",
+                port: 8006,
+                ports: "8006 & 3389 (RDP)",
+                github: "https://github.com/dockur/windows/",
+                icon: "🪟"
+            },
+            {
+                name: "Dockur - Windows 7",
+                description: "Run Windows 7 inside a Docker container",
+                port: 8007,
+                ports: "8007 & 3390 (RDP)",
+                github: "https://github.com/dockur/windows/",
+                icon: "🪟"
+            },
+            {
+                name: "Dockur - Windows 10",
+                description: "Run Windows 10 inside a Docker container",
+                port: 8010,
+                ports: "8010 & 3391 (RDP)",
+                github: "https://github.com/dockur/windows/",
+                icon: "🪟"
+            },
+            {
+                name: "OpenMediaVault - Arm + AMD",
+                description: "Run a full Debian VM with OMV for Raid on your Umbrel",
+                port: 90,
+                ports: "90 (WebUI) 9006 (noVNC) 444 (SMB)",
+                github: "https://openmediavault.io",
+                icon: "💾"
+            }
+        ];
+
+        let currentSort = 'name';
+
+        function renderApps(sortBy) {
+            const grid = document.getElementById('appsGrid');
+            let sortedApps = [...apps];
+
+            if (sortBy === 'name') {
+                sortedApps.sort((a, b) => a.name.localeCompare(b.name));
+            } else if (sortBy === 'port') {
+                sortedApps.sort((a, b) => a.port - b.port);
+            }
+
+            grid.innerHTML = sortedApps.map(app => `
+                <div class="app-card">
+                    <div class="app-icon">${app.icon}</div>
+                    <h3>${app.name}</h3>
+                    <p>${app.description}</p>
+                    <div class="app-ports">
+                        <strong>Ports:</strong> ${app.ports}
+                    </div>
+                    <a href="${app.github}" target="_blank" class="app-link">Learn More</a>
+                </div>
+            `).join('');
+        }
+
+        // Setup sorting buttons
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentSort = this.dataset.sort;
+                renderApps(currentSort);
+            });
+        });
+
+        // Initial render
+        renderApps('name');
+    </script>
+</body>
+</html>

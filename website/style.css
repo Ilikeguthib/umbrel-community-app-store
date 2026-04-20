@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background: white;
+    padding: 60px 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #999;
+}
+
+/* Introduction Section */
+.intro {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.intro p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.05em;
+}
+
+.info-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.info-box h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.info-box code {
+    display: block;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    color: #764ba2;
+    margin-top: 10px;
+    word-break: break-all;
+}
+
+/* Sorting Section */
+.sorting {
+    margin-bottom: 30px;
+}
+
+.sorting h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.sort-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sort-btn {
+    padding: 10px 20px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.sort-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sort-btn.active {
+    background: #667eea;
+    color: white;
+}
+
+/* Apps Grid */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.app-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.app-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.app-card h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.app-card p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.app-ports {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.app-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.app-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 40px 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .apps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sort-controls {
+        justify-content: center;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .sorting h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .app-card {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
