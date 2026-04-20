@@ -34,7 +34,8 @@ https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-
 
 ## Sources
 This Repo is made from
-[Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
+[Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps) and 
+[PedrooMR's Community Store](https://github.com/PedrooMR/umbrel-community-app-store).
 
 The Docker Compose files are taken from the respective projects’ GitHub repositories.
 
