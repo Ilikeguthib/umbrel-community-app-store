@@ -1,0 +1,27 @@
+services:
+  gluetun:
+    image: qmcgaw/gluetun:v3.41.1
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    ports:
+      - 8888:8888/tcp # HTTP proxy
+      - 8388:8388/tcp # Shadowsocks
+      - 8388:8388/udp # Shadowsocks
+      - 9091:9091 #Transmission
+      - 51413:51413
+      - 51413:51413/udp
+    volumes:
+      - /gluetun:/gluetun
+    environment:
+      - HTTPPROXY=off
+      - FREE_ONLY=${FREE_ONLY}
+      - OPENVPN_PASSWORD=${OPENVPN_PASSWORD}
+      - OPENVPN_USER=${OPENVPN_USER}
+      - TZ=${TZ}
+      - UPDATER_PERIOD=${UPDATER_PERIOD}
+      - VPN_SERVICE_PROVIDER=${VPN_SERVICE_PROVIDER}
+      - VPN_TYPE=${VPN_TYPE}
+networks:
+  Gluetun: {}
