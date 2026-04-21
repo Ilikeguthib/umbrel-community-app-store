@@ -8,38 +8,8 @@ version: "1.0.0"
 port: 8006
 
 description: >-
-  This application runs a virtual machine with Windows XP using the dockurr/windows container.
-  Useful for nostalgia, testing, or compatibility with old software.
-
-
-  ⚠️ Minimum Requirements
-
-  CPU: x86_64 processor (Intel or AMD)
-
-  RAM: At least 2 GB
-
-  Disk: Starts small but dynamically expands up to 64 GB
-
-
-  The main interface is available on port 8006 (through the browser),
-  and also supports RDP connections on port 3389.
-
-
-  ✅ File sharing with your Umbrel
-  
- 
-  Open File Explorer inside Windows and go to '\\host.lan\Data'
-  
-  This maps to your Umbrel's downloads folder. Use this to exchange files between your Umbrel and the virtual machine.
-
-
-  ⚠️ Your device must support virtualization and enabled in the BIOS/UEFI!
-
-  
-  The product names, logos, brands, and other trademarks referred to within this project
-  are the property of their respective trademark holders. This project is not affiliated,
-  sponsored, or endorsed by Microsoft Corporation.
-developer: Dockur
+  Lightweight swiss-knife-like VPN client to multiple VPN service providers 
+developer: Portainer
 website: https://github.com/dockur/windows
 submitter: H
 submission: https://github.com/H/umbrel-community-app-store

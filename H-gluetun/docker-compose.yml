@@ -1,4 +1,13 @@
+version: "3.7"
+
 services:
+
+  app_proxy:
+    environment:
+      APP_HOST: H-gluetun_gluetun_1
+      APP_PORT: 1234
+      PROXY_AUTH_ADD: "false"
+
   gluetun:
     image: qmcgaw/gluetun:v3.41.1
     cap_add:
@@ -9,11 +18,8 @@ services:
       - 8888:8888/tcp # HTTP proxy
       - 8388:8388/tcp # Shadowsocks
       - 8388:8388/udp # Shadowsocks
-      - 9091:9091 #Transmission
-      - 51413:51413
-      - 51413:51413/udp
     volumes:
-      - /gluetun:/gluetun
+      - ${APP_DATA_DIR}/data:/gluetun
     environment:
       - HTTPPROXY=off
       - FREE_ONLY=${FREE_ONLY}
