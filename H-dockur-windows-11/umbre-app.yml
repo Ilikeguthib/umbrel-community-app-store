@@ -1,14 +1,14 @@
 manifestVersion: 1
 id: H-dockur-windows-xp
 name: Windows XP
-tagline: Run Windows XP inside a Docker container
-icon: https://i.imgur.com/jBXRKpu.png
+tagline: Run Windows 11 inside a Docker container
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/windows-11.png
 category: Windows
 version: "1.0.0"
 port: 8006
 
 description: >-
-  This application runs a virtual machine with Windows XP using the dockurr/windows container.
+  This application runs a virtual machine with Windows 11 using the dockurr/windows container.
   Useful for nostalgia, testing, or compatibility with old software.
 
 
@@ -16,7 +16,7 @@ description: >-
 
   CPU: x86_64 processor (Intel or AMD)
 
-  RAM: At least 2 GB
+  RAM: At least 4 GB
 
   Disk: Starts small but dynamically expands up to 64 GB
 
@@ -51,7 +51,7 @@ gallery:
   - https://i.imgur.com/EHzW7a6.png
 
 releaseNotes: >-
-  Initial release of the Windows XP virtual machine app powered by dockurr/windows.
+  Powered by dockur/windows
 
 dependencies: []
 

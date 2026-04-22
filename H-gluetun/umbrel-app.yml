@@ -2,8 +2,8 @@ manifestVersion: 1
 id: H-gluetun
 name: Gluetun
 tagline: VPN Layer for your Umbrel
-icon: https://i.imgur.com/jBXRKpu.png
-category: Operating Systems
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/gluetun.png
+category: VPN
 version: "1.0.0"
 port: 8006
 

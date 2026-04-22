@@ -3,7 +3,7 @@ id: H-dockur-omv-amd
 name: Openmediavault
 tagline: Run Openmediavault in a qemu container
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/openmediavault.png
-category: Operating Systems
+category: server
 version: "1.0.0"
 port: 90
 
