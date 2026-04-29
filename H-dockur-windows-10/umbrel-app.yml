@@ -3,7 +3,7 @@ id: H-dockur-windows-10
 name: Windows 10
 tagline: Run Windows 10 inside a Docker container
 icon: https://i.imgur.com/mZ8m1D6.png
-category: Operating Systems
+category: Windows
 version: "1.0.0"
 port: 8010
 

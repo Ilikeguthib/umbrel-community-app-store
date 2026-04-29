@@ -3,7 +3,7 @@ id: H-dockur-windows-xp
 name: Windows XP
 tagline: Run Windows XP inside a Docker container
 icon: https://i.imgur.com/jBXRKpu.png
-category: Operating Systems
+category: Windows
 version: "1.0.0"
 port: 8006
 

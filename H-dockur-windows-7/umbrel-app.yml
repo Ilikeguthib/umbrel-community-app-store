@@ -3,7 +3,7 @@ id: H-dockur-windows-7
 name: Windows 7
 tagline: Run Windows 7 inside a Docker container
 icon: https://i.imgur.com/56bxWvr.png
-category: Operating Systems
+category: Windows
 version: "1.0.0"
 port: 8007
 
