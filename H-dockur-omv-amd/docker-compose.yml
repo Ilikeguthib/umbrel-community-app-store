@@ -15,7 +15,7 @@ services:
       BOOT: "debian"
       RAM_SIZE: "2G"
       CPU_CORES: "2"
-      DISK_SIZE: "32G"
+      DISK_SIZE: "4G"
       PUID: 1000
       PGID: 1000
     devices:
