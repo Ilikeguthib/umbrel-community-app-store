@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: H-dockur-omv-amd
+id: h-dockur-omv-amd
 name: Openmediavault (AMD64)
 tagline: Run Openmediavault in a qemu container
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/openmediavault.png

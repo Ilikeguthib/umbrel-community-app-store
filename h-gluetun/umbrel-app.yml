@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: H-gluetun
+id: h-gluetun
 name: Gluetun
 tagline: VPN Layer for your Umbrel
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/gluetun.png
