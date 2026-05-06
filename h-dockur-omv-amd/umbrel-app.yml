@@ -18,7 +18,7 @@ description: >-
 
   RAM: At least 2 GB
 
-  Disk: Starts small but dynamically expands up to 32 GB
+  Disk: Starts small but dynamically expands up to 4 GB
 
 
   The main interface is available on port 90 (through the browser),
