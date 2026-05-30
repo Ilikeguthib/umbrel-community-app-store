@@ -1,0 +1,17 @@
+---
+services:
+  kali-linux:
+    image: lscr.io/linuxserver/kali-linux:latest
+    container_name: kali-linux
+    environment:
+      - PIXELFLUX_WAYLAND=true
+      # Ensure these point to the rendered node injected by the runtime (usually renderD128)
+      - DRINODE=/dev/dri/renderD128
+      - DRI_NODE=/dev/dri/renderD128
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - /data:/config
+    shm_size: "2gb"
+    restart: unless-stopped
