@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: h--kali-linux
+name: Kali Linux
+tagline: For all your hacking needs
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/kali-linux.png
+category: Linux
+version: "1.0.0"
+port: 3001
+
+description: >-
+  Literally everyone uses that bloated shit for anything BUT hacking so here it is
+developer: OffSec
+website: https://www.kali.org
+submitter: H
+submission: https://github.com/H/umbrel-community-app-store
+repo: https://github.com/H/umbrel-community-app-store
+support: https://github.com/H/umbrel-community-app-store/issues
+
+gallery:
+  - https://i.imgur.com/cZWJM4s.png
+  - https://i.imgur.com/UE4CGBu.png
+  - https://i.imgur.com/zxSPszi.png
+
+releaseNotes: >-
+KALI FUCKIN LINUX
+
+dependencies: []
+defaultUsername:
+defaultPassword:
