@@ -24,7 +24,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/storage:rw
     ports:
-      - 8008:8006
+      - 8006:8008
       - 5900:5900/tcp
       - 5900:5900/udp
     stop_grace_period: 2m
