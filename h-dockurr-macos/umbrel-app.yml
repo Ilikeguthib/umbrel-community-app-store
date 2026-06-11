@@ -1,0 +1,58 @@
+manifestVersion: 1
+id: h-dockurr-macos
+name: Mac OS 15
+tagline: Run MacOS 15 inside a Docker container
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/apple-retro.png
+category: MacOS
+version: "1.0.0"
+port: 8008
+
+description: >-
+  It’s Mac OS... but cooler — running in Docker, on your Umbrel, like a boss.
+  
+
+  ⚠️ Minimum Requirements
+
+  CPU: x86_64 processor (Intel or AMD)
+
+  RAM: At least 8 GB
+
+  Disk: Starts small but dynamically expands up to 64 GB
+
+
+  The main interface is available on port 8008 (through the browser)
+
+
+  ✅ File sharing with your Umbrel
+  
+ 
+  Open File Explorer inside MacOS and go to '\\host.lan\Data'
+  
+  This maps to your Umbrel's APP DATA dir /shared folder. Use this to exchange files between your Umbrel and the virtual machine.
+
+
+  ⚠️ Your device must support virtualization and enabled in the BIOS/UEFI!
+
+  
+  The product names, logos, brands, and other trademarks referred to within this project
+  are the property of their respective trademark holders. This project is not affiliated,
+  sponsored, or endorsed by Microsoft Corporation.
+developer: Dockur
+website: https://github.com/dockur/macos
+submitter: H
+submission: https://github.com/H/umbrel-community-app-store
+repo: https://github.com/H/umbrel-community-app-store
+support: https://github.com/H/umbrel-community-app-store/issues
+
+gallery:
+  - https://i.imgur.com/DauzSjU.png
+  - https://i.imgur.com/FLdvRUp.png
+  - https://i.imgur.com/kqchnth.png
+
+releaseNotes: >-
+  Powered by the GOAT dockurr
+
+dependencies: []
+
+defaultUsername: Docker
+defaultPassword: admin
