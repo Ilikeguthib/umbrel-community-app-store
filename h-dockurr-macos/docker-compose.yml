@@ -1,19 +1,30 @@
+version: "3.7"
+
 services:
-  macos:
+
+  app_proxy:
+    environment:
+      APP_HOST: h-dockurr-macos_app_1
+      APP_PORT: 90
+      PROXY_AUTH_ADD: "false"
+
+  app:
     image: dockurr/macos
-    container_name: macos
+    restart: on-failure
     environment:
       VERSION: "15"
+      RAM_SIZE: "8G"
+      CPU_CORES: "6"
+      DISK_SIZE: "64G"
     devices:
       - /dev/kvm
       - /dev/net/tun
     cap_add:
       - NET_ADMIN
+    volumes:
+      - ${APP_DATA_DIR}/data:/storage:rw
     ports:
       - 8006:8006
       - 5900:5900/tcp
       - 5900:5900/udp
-    volumes:
-      - ./macos:/storage
-    restart: always
     stop_grace_period: 2m
