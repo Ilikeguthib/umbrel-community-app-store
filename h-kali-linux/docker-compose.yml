@@ -11,6 +11,8 @@ services:
   app:
     image: lscr.io/linuxserver/kali-linux:latest
     container_name: kali-linux
+    devices:
+      - /dev/dri:/dev/dri
     environment:
       - PIXELFLUX_WAYLAND=true
       # Ensure these point to the rendered node injected by the runtime (usually renderD128)
