@@ -2,7 +2,7 @@ manifestVersion: 1
 id: h-kali-linux
 name: Kali Linux
 tagline: For all your hacking needs
-icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/kali-linux.png
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/kali-linux.png
 category: Linux
 version: "1.0.0"
 port: 3001
