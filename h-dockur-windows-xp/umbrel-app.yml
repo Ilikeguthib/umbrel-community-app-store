@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: g-dockur-windows-xp
+id: h-dockur-windows-xp
 name: Windows XP
 tagline: Run Windows XP inside a Docker container
 icon: https://i.imgur.com/jBXRKpu.png
